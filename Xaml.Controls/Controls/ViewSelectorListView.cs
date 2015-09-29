@@ -105,7 +105,7 @@ namespace Xaml.Controls
         /// </summary>
         /// <returns>The default view.</returns>
         /// <param name="o">The object the view will represent.</param>
-        protected virtual View GetDefaultView(object o) { return null; }
+        protected virtual View GetDefaultView(object o) { return new Label { Text = o.ToString() }; }
 
         /// <summary>
         /// Raises the items source changing event.
