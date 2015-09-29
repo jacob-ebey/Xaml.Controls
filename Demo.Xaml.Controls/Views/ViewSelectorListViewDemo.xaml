@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:controls="clr-namespace:Xaml.Controls;assembly=Xaml.Controls"
+			 xmlns:local="clr-namespace:Demo.Xaml.Controls;assembly=Demo.Xaml.Controls"
+			 x:Class="Demo.Xaml.Controls.ViewSelectorListViewDemo"
+			 x:Name="page">
+	<ContentPage.Content>
+		<!--- Usually you would use a binding for ItemsSource -->
+		<controls:ViewSelectorListView x:Name="selectorList">
+			<controls:ViewSelectorListView.ViewCreatorProvider>
+				<local:ViewSelectorViewCreator />
+			</controls:ViewSelectorListView.ViewCreatorProvider>
+		</controls:ViewSelectorListView>
+	</ContentPage.Content>
+</ContentPage>

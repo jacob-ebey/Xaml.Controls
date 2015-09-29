@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:controls="clr-namespace:Xaml.Controls;assembly=Xaml.Controls"
+			 xmlns:local="clr-namespace:Demo.Xaml.Controls;assembly=Demo.Xaml.Controls"
+			 x:Class="Demo.Xaml.Controls.ContentSelectorViewDemo">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<Button Text="Change Binding Context" Command="{Binding ChangeBindingContextCommand}" />
+			<controls:ContentSelectorView BindingContext="{Binding BindingContext}">
+				<controls:ContentSelectorView.ViewCreatorProvider>
+					<local:ContentSelectorViewCreator />
+				</controls:ContentSelectorView.ViewCreatorProvider>
+			</controls:ContentSelectorView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -127,10 +127,16 @@ namespace Xaml.Controls
         {
             ItemsSourceChanged?.Invoke(this, new EventArgs());
 
-            INotifyCollectionChanged collectionChangedNotifier = ItemsSource as INotifyCollectionChanged;
+            if (ItemsSource != null)
+            {
+                foreach (var item in ItemsSource)
+                    stackLayout.Children.Add(GetViewForObject(item));
 
-            if (collectionChangedNotifier != null)
-                collectionChangedNotifier.CollectionChanged += OnItemsSourceColectionChanged;
+                INotifyCollectionChanged collectionChangedNotifier = ItemsSource as INotifyCollectionChanged;
+
+                if (collectionChangedNotifier != null)
+                    collectionChangedNotifier.CollectionChanged += OnItemsSourceColectionChanged;
+            }
         }
 
         /// <summary>

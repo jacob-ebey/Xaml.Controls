@@ -3,15 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xaml.Controls", "Xaml.Controls\Xaml.Controls.csproj", "{2EDBE9F4-A9F3-47D5-B6D4-6BCDF435B1A4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{757218DA-1BEE-4D2D-874F-6DFDA1D4AAAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Xaml.Controls", "Demo.Xaml.Controls\Demo.Xaml.Controls.csproj", "{B7377737-4396-4E23-A727-D850449C4A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Xaml.Controls.Droid", "Droid\Demo.Xaml.Controls.Droid.csproj", "{18284F4F-E11F-47C8-B646-DEBB25692206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18284F4F-E11F-47C8-B646-DEBB25692206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18284F4F-E11F-47C8-B646-DEBB25692206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18284F4F-E11F-47C8-B646-DEBB25692206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18284F4F-E11F-47C8-B646-DEBB25692206}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2EDBE9F4-A9F3-47D5-B6D4-6BCDF435B1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2EDBE9F4-A9F3-47D5-B6D4-6BCDF435B1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EDBE9F4-A9F3-47D5-B6D4-6BCDF435B1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EDBE9F4-A9F3-47D5-B6D4-6BCDF435B1A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7377737-4396-4E23-A727-D850449C4A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7377737-4396-4E23-A727-D850449C4A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7377737-4396-4E23-A727-D850449C4A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7377737-4396-4E23-A727-D850449C4A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7377737-4396-4E23-A727-D850449C4A4D} = {757218DA-1BEE-4D2D-874F-6DFDA1D4AAAF}
+		{18284F4F-E11F-47C8-B646-DEBB25692206} = {757218DA-1BEE-4D2D-874F-6DFDA1D4AAAF}
 	EndGlobalSection
 EndGlobal
