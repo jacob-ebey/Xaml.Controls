@@ -20,6 +20,6 @@
     <file src="bin\Release\Xaml.Controls.xml" target="lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Xaml.Controls.xml" />
     <file src="bin\Release\Xaml.Controls.pdb" target="lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Xaml.Controls.pdb" />
 
-    <file src="Controls\README.md" target="content\README.md" />
+    <file src="content\README.md" target="content\README.md" />
   </files>
 </package>
