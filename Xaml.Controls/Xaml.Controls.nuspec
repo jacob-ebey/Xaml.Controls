@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Jacob.Ebey.Xaml.Controls</id>
-    <version>0.0.1-beta</version>
+    <version>0.0.2-beta</version>
     <title>More Xamarin Forms Controls</title>
     <authors>Jacob Ebey</authors>
     <owners>Jacob Ebey</owners>
